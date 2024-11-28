@@ -101,7 +101,7 @@ while (proceed)
                 Console.WriteLine("############# Parsing absence ###############");
                 Console.WriteLine("#############################################");
                 int absence = 0;
-                if (int.TryParse(toSubjects[0], out int absenceResult))
+                if (int.TryParse(lineArr[7], out int absenceResult))
                 {
                     absence = absenceResult;
                 }
@@ -110,7 +110,7 @@ while (proceed)
                     error = true;
                 }
                 int excused = 0;
-                if (int.TryParse(toSubjects[0], out int excusedResult))
+                if (int.TryParse(lineArr[8], out int excusedResult))
                 {
                     excused = absenceResult;
                 }
@@ -119,7 +119,7 @@ while (proceed)
                     error = true;
                 }
                 int nonExcused = 0;
-                if (int.TryParse(toSubjects[0], out int nonExcuedResult))
+                if (int.TryParse(lineArr[9], out int nonExcuedResult))
                 {
                     nonExcused = absenceResult;
                 }
